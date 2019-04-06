@@ -1,27 +1,26 @@
 # TimerTask
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+You need to create angular 7 application with next requirements:
 
-## Development server
+Implementation should be provided with git history starting from angular boilerplate as initial commit.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+feel free to use any libraries you find the best match.
 
-## Code scaffolding
+Create store with 2 variables in state with naming up to your decision.
+Initial state of them is -5 and 10 respectively.
+Store should have 3 actions: "change", "increase" and "decrease".
+"change" action does nothing in a reducer.
+"increase" action should increase first variable by 1.
+"decrease" action should decrease second variable by 1.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Create 2 components:
+First component is responsible to display what it gets in input property. It should display input always in a border. If value is lower than 0 its border and value should be some red. If greater then some blue.
+Second component renders variables from store by first component.
 
-## Build
+When we open application first time we should see numbers. The page should contain also start button (implementation is up to you). Once it's pushed appliction should start to dispatch "change" action every second. The action causes change in store state of 1st variable once and 2nd variable twice.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+All written logic should be covered by tests.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+bonus task: stop button.
+bonus task: reset button.
+bonus task: don't use setTimeout / setInterval.
