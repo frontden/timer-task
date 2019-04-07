@@ -1,0 +1,28 @@
+.app-temperature__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.app-temperature {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.app-temperature__box_cold {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.app-temperature__box_hot {
+    border: 1px solid red;
+    color: red;
+}

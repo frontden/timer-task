@@ -1,0 +1,19 @@
+<div class="app-temperature">
+
+  <div class="app-temperature__box"
+       [ngClass]="{'app-temperature__box_cold': temperature.minskTemperature < 0,
+                   'app-temperature__box_hot': temperature.minskTemperature > 0}">
+
+    {{temperature.minskTemperature}}
+
+  </div>
+
+  <div class="app-temperature__box"
+       [ngClass]="{'app-temperature__box_cold': temperature.londonTemperature < 0,
+                   'app-temperature__box_hot': temperature.londonTemperature > 0}">
+
+    {{temperature.londonTemperature}}
+
+  </div>
+
+</div>

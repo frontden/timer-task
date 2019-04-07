@@ -1,0 +1,17 @@
+<div class="app-control">
+
+    <div class="app-control__actions">
+
+        <button class="app-control__button" (click)="start()">start</button>
+        <button class="app-control__button" (click)="stop()">stop</button>
+        <button class="app-control__button" (click)="reset()">reset</button>
+
+    </div>
+
+    <div class="app-control__temperature-view">
+
+        <app-temperature [temperature]="temperature"></app-temperature>
+
+    </div>
+
+</div>
